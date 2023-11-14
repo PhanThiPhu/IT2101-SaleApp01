@@ -24,5 +24,8 @@ def get_user(user_id):
 
 if __name__ == '__main__':
     from app import admin
+<<<<<<< HEAD
 
+=======
+>>>>>>> 01dae9c619b16595e334ffb64663443053e05f32
     app.run(debug=True)

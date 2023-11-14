@@ -39,6 +39,7 @@ class Product(db.Model):
 
 if __name__ == '__main__':
     with app.app_context():
+<<<<<<< HEAD
         db.create_all()
 
         import hashlib
@@ -51,6 +52,14 @@ if __name__ == '__main__':
         # db.session.add(c1)
         # db.session.add(c2)
         # db.session.commit()
+=======
+        c1 = Category(name='Mobile')
+        c2 = Category(name='Tablet')
+
+        db.session.add(c1)
+        db.session.add(c2)
+        db.session.commit()
+>>>>>>> 01dae9c619b16595e334ffb64663443053e05f32
 
         # p1 = Product(name='iPhone 15', price=20000000, category_id=1,
         #              image='https://cdn.tgdd.vn/Products/Images/42/305660/iphone-15-pro-max-tu-nhien-1.jpg')
@@ -68,3 +77,9 @@ if __name__ == '__main__':
         # db.session.add_all([p1, p2, p3, p4, p5, p6])
         # db.session.commit()
 
+<<<<<<< HEAD
+=======
+        db.session.add_all([p1, p2, p3, p4, p5, p6])
+        db.session.commit()
+        # db.create_all()
+>>>>>>> 01dae9c619b16595e334ffb64663443053e05f32

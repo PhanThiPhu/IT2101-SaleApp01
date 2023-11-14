@@ -1,5 +1,9 @@
 from flask_admin.contrib.sqla import ModelView
+<<<<<<< HEAD
 from flask_admin import Admin, BaseView, expose
+=======
+from flask_admin import Admin
+>>>>>>> 01dae9c619b16595e334ffb64663443053e05f32
 from app import app, db
 from app.models import Category, Product
 
@@ -20,6 +24,7 @@ class MyCategoryView(ModelView):
     column_list = ['name', 'products']
 
 
+<<<<<<< HEAD
 class MyStatsView(BaseView):
     @expose("/")
     def index(self):
@@ -29,3 +34,7 @@ class MyStatsView(BaseView):
 admin.add_view(MyCategoryView(Category, db.session))
 admin.add_view(MyProductView(Product, db.session))
 admin.add_view(MyStatsView(name='Thống kê báo cáo'))
+=======
+admin.add_view(ModelView(Category, db.session))
+admin.add_view(MyProductView(Product, db.session))
+>>>>>>> 01dae9c619b16595e334ffb64663443053e05f32
